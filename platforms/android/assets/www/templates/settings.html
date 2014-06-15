@@ -1,0 +1,25 @@
+<ion-view title="Settings">
+<ion-nav-buttons side="left">
+<button menu-toggle="left"class="button button-icon icon ion-navicon"></button>
+</ion-nav-buttons>
+<ion-content class="has-header">
+<div class="content">
+	<ul class="list">
+		<li class="item item-toggle">
+			Show distances in miles?
+			<label class="toggle">
+				<input type="checkbox" ng-model="settings.distanceTypeMiles">
+				<div class="track">
+					<div class="handle"></div>
+				</div>
+			</label>
+		</li>
+		<li class="item range range-positive">
+			Weight:
+			<input type="range" name="volume" min="50" max="300" ng-model="settings.weight">
+			{{settings.weight}}
+		</li>
+	</ul>
+</div>
+</ion-content>
+</ion-view>

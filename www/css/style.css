@@ -1,0 +1,105 @@
+/* Empty. Add your own CSS if you like */
+
+p,h1,h2,h3,h4,h5,h6,a {
+	font-family: 'Signika Negative';
+}
+
+.main-top {
+	height: 576px;
+}
+
+.main-gridbox {
+	height: 576px;
+	background-color: rgb(130,170,180);
+	color: #fff;
+	text-align: center;
+	padding-top: 58px;
+}
+
+.main-gridbox h2 {
+	color: #fff;
+	font-size: 40px;
+	letter-spacing: 1.5px;
+}
+
+.right-top-gridbox {
+	height: 64px;
+	background-color: rgb(0,218,186);
+	color: rgb(65,85,90);
+}
+
+.right-top-gridbox p {
+	font-size: 24px;
+	font-weight: 300;
+}
+
+.right-mid-gridbox {
+	height: 240px;
+	background-color: rgb(76,202,254);
+	color: #fff;
+}
+
+.right-mid-gridbox h2, .right-bot-gridbox h2, .bottom-right-gridbox h2 {
+	color: #fff;
+	font-size: 40px;
+	letter-spacing: 1.5px;
+	line-height: 40px;
+}
+
+.right-mid-gridbox p, .right-bot-gridbox p, .bottom-right-gridbox p {
+	font-size: 24px;
+	font-weight: 300;
+}
+
+.right-mid-gridbox p span, .right-bot-gridbox p span, .bottom-right-gridbox p span {
+	font-weight: 700;
+}
+
+.right-bot-gridbox {
+	height: 240px;
+	background-color: rgb(68,150,183);
+	color: #fff;
+}
+
+.bottom-left-gridbox {
+	height: 248px;
+	background-color: rgb(1,218,186);
+	color: rgb(65,85,90);
+}
+
+.bottom-right-gridbox {
+	height: 248px;
+	background-color: rgb(145,38,142);
+	color: #fff;
+}
+
+/* Menu Design */
+
+.main-status-bar {
+	padding-left: 17px;
+	padding-top:50px;
+}
+
+header.bar.bar-stable.menu-bar {
+	background-color: rgb(65,85,90);
+	border-color: #fff;
+}
+
+.menu-bar-content {
+	background-color: rgb(65,85,90);
+	padding-top: 10px;
+}
+
+.menu-item {
+	background: none;
+	border: 0;
+}
+
+.menu-item a.item-content {
+	font-family: 'Signika Negative';
+	font-size: 40px;
+	line-height: 40px;
+	background: none;
+	color: #fff;
+	border: 0;
+}
