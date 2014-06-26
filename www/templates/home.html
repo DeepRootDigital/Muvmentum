@@ -7,20 +7,28 @@
 	<div class="col col-60">
 		<div class="main-gridbox">
 			<h2>distance v. time</h2>
+			<img class="dots" src="img/dots.png" alt="" />
+			<p>days</p>
+			<img class="circle" src="img/circle.png" alt="" />
+			<p class="align">walking</p>
+			<img class="circle" src="img/circle2.png" alt="" />
+			<p class="align">driving</p>
 		</div>
 	</div>
 	<div class="col col-40">
 		<div class="row right-top-gridbox">
+			<img class="date" src="img/date.png" alt="" />
 			<p>{{todayMonthName}} {{todayDay}}, {{todayYear}}</p>
-			
 		</div>
 		<div class="row right-mid-gridbox">
+			<img class="walker" src="img/walker.png" alt="" />
 			<h2>distance<br /> walked</h2>
-			<p ng-hide="settings.distanceTypeMiles"><span>{{walkDistance}}</span><br /> km</p>
-			<p ng-show="settings.distanceTypeMiles"><span>{{walkDistanceMiles}}</span><br /> miles</p>
+			<p ng-hide="settings.distanceTypeMiles"><span>{{walkDistance}}</span> km</p>
+			<p ng-show="settings.distanceTypeMiles"><span>{{walkDistanceMiles}}</span> miles</p>
 
 		</div>
 		<div class="row right-bot-gridbox">
+			<img class="wheel" src="img/wheel.png" alt="" />
 			<h2>distance<br /> driven</h2>
 			<p ng-hide="settings.distanceTypeMiles"><span>{{driveDistance}}</span><br /> km</p>
 			<p ng-show="settings.distanceTypeMiles"><span>{{driveDistanceMiles}}</span><br /> miles</p>
@@ -30,11 +38,12 @@
 <div class="row">
 	<div class="col col-33">
 		<div class="bottom-left-gridbox">
-			
+			<img class="gear" src="img/gear.png" alt="" />
 		</div>
 	</div>
 	<div class="col col-66">
 		<div class="bottom-right-gridbox">
+			<img class="checkmark1" src="img/checkmark.png" alt="" />
 			<h2>total distance<br /> moved today:</h2> 
 			<p ng-hide="settings.distanceTypeMiles"><span>{{totalDistance}}</span>KM</p>
 			<p ng-show="settings.distanceTypeMiles"><span>{{totalDistance}}</span>miles</p>

@@ -1,26 +1,31 @@
 <ion-side-menus>
-
   <ion-pane ion-side-menu-content>
-    <ion-nav-bar class="bar-stable nav-title-slide-ios7">
+    <ion-nav-bar class="bar-stable nav-title-slide-ios7 main-status-bar">
       <ion-nav-back-button class="button-clear"><i class="icon ion-ios7-arrow-back"></i> Back</ion-nav-back-button>
     </ion-nav-bar>
     <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
   </ion-pane>
 
   <ion-side-menu side="left">
-    <header class="bar bar-header bar-stable">
-      <h1 class="title">Left</h1>
+    <header class="bar bar-header bar-stable menu-bar">
+      <h1 class="title">menu</h1>
     </header>
-    <ion-content class="has-header">
+    <ion-content class="has-header menu-bar-content">
       <ion-list>
-        <ion-item nav-clear menu-close href="#/app/dashboard">
-          Dashboard
+        <ion-item class="menu-item" nav-clear menu-close href="#/app/dashboard">
+          <img src="img/dash.png" alt="" />
+          dashboard
         </ion-item>
-        <ion-item nav-clear menu-close href="#/app/history">
-          History
+        <ion-item class="menu-item" nav-clear menu-close href="#/app/history">
+          <img src="img/history.png" alt="" />
+          history
         </ion-item>
-        <ion-item nav-clear menu-close href="#/app/settings">
-          Settings
+        <ion-item class="menu-item" nav-clear menu-close href="#/app/settings">
+          <img src="img/settings.png" alt="" />
+          settings
+        </ion-item>
+        <ion-item class="menu-item" nav-clear menu-close href="#/app/splash">
+          splash
         </ion-item>
       </ion-list>
     </ion-content>
