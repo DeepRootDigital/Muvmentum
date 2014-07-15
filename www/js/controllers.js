@@ -1,6 +1,6 @@
 angular.module('starter')
 
-.controller('AppCtrl', ['$rootScope', '$scope', '$cordovaGeolocation', '$cordovaDeviceMotion', '$ionicLoading', 'travelInfo', function($rootScope, $scope, $cordovaGeolocation, $cordovaDeviceMotion, $ionicLoading, travelInfo) {
+.controller('AppCtrl', ['$rootScope', '$scope', '$window','$cordovaGeolocation', '$cordovaDeviceMotion', '$ionicLoading', 'travelInfo', function($rootScope, $scope, $window, $cordovaGeolocation, $cordovaDeviceMotion, $ionicLoading, travelInfo) {
 	$scope.getPosition = function() {
 		$cordovaGeolocation.getCurrentPosition().then(function(position) {
 			$scope.position = position;
@@ -76,6 +76,9 @@ angular.module('starter')
     $scope.$watch(function() { return $rootScope.settings; }, function(oldone, newone){
     	$scope.settings = $rootScope.settings;
     });
+    $scope.$watch(function() { return $rootScope.settings.weight; }, function(oldone, newone) {
+    	$scope.slideLeft = ($rootScope.settings.weight / 660) * $window.innerWidth + 50;
+    });
 
     $scope.infoString = [];
     $scope.getDate();
@@ -87,8 +90,29 @@ angular.module('starter')
     $scope.driveDistance = 0;
     $scope.getPosition();
     $scope.trackPosition();
+	//$scope.slideLeft = ($rootScope.settings.weight / 300) * $window.innerWidth;
+
 }])
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
 
+})
+
+.controller('SplashCtrl', function($scope, $stateParams, $window) {
+	$scope.setting = {
+		weight: 100
+	}
+
 });
+
+
+
+
+
+
+
+
+
+
+
+

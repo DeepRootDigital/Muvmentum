@@ -3,11 +3,72 @@
 <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
 </ion-nav-buttons>
 <ion-content class="has-header padding-bottom">
-<div class="card">
-	<div class="item item-text-wrap">
-		<p ng-hide="settings.distanceTypeMiles">Total Distance Moved Today: <span>{{totalDistance}}</span>KM</p>
+		<!--<p ng-hide="settings.distanceTypeMiles">Total Distance Moved Today: <span>{{totalDistance}}</span>KM</p>
 		<p ng-show="settings.distanceTypeMiles">Total Distance Moved Today: <span>{{totalDistance}}</span>miles</p>
+	</div>-->
+	<div class="list-graph">
+		<div class="info-list">
+			<p>list</p>
+		</div>
+		<div class="graph">
+			<p>graph</p>
+		</div>
 	</div>
-</div>
+
+	<div class="history-list">
+		<ion-item class='info-list-block'>
+			<div class="item-left">
+				<p>6/09/2045</p>
+				<p>total:</p>
+				<span>510 miles</span>
+			</div>
+			<div class="item-right">
+				<p>walked:</p>
+				<span>10 miles</span>
+				<p>driven:</p>
+				<span>500 miles</span>
+			</div>
+		</ion-item>
+		<ion-item class='info-list-block'>
+			<p>9/28/1602</p>
+			<img class="arrow" src="img/arrow.png" align="" />
+		</ion-item>
+		<ion-item class='info-list-block'>
+			<p>9/28/1602</p>
+			<img class="arrow" src="img/arrow.png" align="" />
+		</ion-item>
+		<ion-item class='info-list-block'>
+			<p>9/28/1602</p>
+			<img class="arrow" src="img/arrow.png" align="" />
+		</ion-item>
+	</div>
+
+	<div class="history-graph">
+		<ion-item class='info-graph-block'>
+			<p class="graph-title">distance v. time</p>
+			<div class="graph-area">
+				<!-- save this for later -->		
+			</div>
+			<img class="graph-dots" src="img/dots.png" alt="" />
+			<p class="graph-days">days</p>
+			<div class="herp">
+				<img class="graph-circle" src="img/circle.png" alt="" />
+				<p class="align">walking</p>
+				<img class="graph-circle" src="img/circle2.png" alt="" />
+				<p class="align">driving</p>
+			</div>
+		</ion-item>
+		<ion-item class='info-graph-block'>
+			<div class="graph-left">
+				<p>month/day</p>
+				<p>06 / 02</p>
+			</div>
+			<div class="graph-right">
+				<p>month/day</p>
+				<p>06 / 02</p>
+			</div>
+		</ion-item>
+	</div>
+
 </ion-content>
 </ion-view>

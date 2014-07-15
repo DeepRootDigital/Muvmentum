@@ -53,6 +53,15 @@ angular.module('starter', ['ionic', 'ngCordova'])
       }
     })
 
+    .state('app.splash', {
+      url: "/splash",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/splash.html"
+        }
+      }
+    })
+
     .state('app.settings', {
       url: "/settings",
       views: {

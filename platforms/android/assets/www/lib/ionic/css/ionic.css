@@ -2198,7 +2198,7 @@ ion-infinite-scroll.active .scroll-infinite {
 
 /* If you change these, change platform.scss as well */
 .has-header {
-  top: 44px; }
+  top: 57px; }
 
 .no-header {
   top: 0; }
@@ -2477,7 +2477,7 @@ a.subdued {
   box-sizing: border-box;
   padding: 5px;
   width: 100%;
-  height: 44px;
+  height: 120px;
   border-width: 0;
   border-style: solid;
   border-top: 1px solid transparent;
@@ -2516,12 +2516,13 @@ a.subdued {
     .bar.bar-light .title {
       color: #444; }
   .bar.bar-stable {
-    border-color: #b2b2b2;
-    background-color: #f8f8f8;
+    border-color: rgb(178,71,8);
+    background-color: rgb(225,103,13);
     background-image: linear-gradient(0deg, #b2b2b2, #b2b2b2 50%, transparent 50%);
-    color: #444; }
+    color: rgb(178,71,8); }
     .bar.bar-stable .title {
-      color: #444; }
+      color: #fff;
+      font-size: 40px; }
   .bar.bar-positive {
     border-color: #145fd7;
     background-color: #4a87ee;
@@ -2573,7 +2574,7 @@ a.subdued {
       color: #fff; }
   .bar .title {
     position: absolute;
-    top: 0;
+    top: 40px;
     right: 0;
     left: 0;
     z-index: 0;
@@ -2609,7 +2610,7 @@ a.subdued {
       font-size: 17px; }
       .bar .button.button-icon .icon:before, .bar .button.button-icon:before, .bar .button.button-icon.icon-left:before, .bar .button.button-icon.icon-right:before {
         vertical-align: top;
-        font-size: 32px;
+        font-size: 70px;
         line-height: 32px; }
     .bar .button.button-clear {
       padding-right: 2px;
@@ -2658,7 +2659,7 @@ a.subdued {
 .bar-stable .button {
   border-color: #b2b2b2;
   background-color: #f8f8f8;
-  color: #444; }
+  color: rgb(178,71,8); }
   .bar-stable .button:hover {
     color: #444;
     text-decoration: none; }
@@ -2670,7 +2671,7 @@ a.subdued {
     border-color: transparent;
     background: none;
     box-shadow: none;
-    color: #444;
+    color: rgb(178,71,8);
     font-size: 17px; }
   .bar-stable .button.button-icon {
     border-color: transparent;
@@ -5962,7 +5963,8 @@ a.button {
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 5px;
+  padding: 0px;
+  margin-bottom: 21px;
   width: 100%; }
 
 .row + .row {
@@ -5977,8 +5979,20 @@ a.button {
   -ms-flex: 1;
   flex: 1;
   display: block;
-  padding: 5px;
+  padding: 0 8px;
   width: 100%; }
+
+.row .col:first-of-type {
+	padding-left:0;
+}
+
+.row .col:last-of-type {
+	padding-right:0;
+}
+
+.row:last-of-type {
+	padding:0;
+}
 
 /* Vertically Align Columns */
 /* .row-* vertically aligns every .col in the .row */
@@ -6104,6 +6118,15 @@ a.button {
   flex: 0 0 33.3333%;
   max-width: 33.3333%; }
 
+  .col-40 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 40%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 40%;
+  -ms-flex: 0 0 40%;
+  flex: 0 0 40%;
+  max-width: 40%; }
+
 .col-50 {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 50%;
@@ -6112,6 +6135,15 @@ a.button {
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
   max-width: 50%; }
+
+  .col-60 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 60%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 60%;
+  -ms-flex: 0 0 60%;
+  flex: 0 0 60%;
+  max-width: 60%; }
 
 .col-66, .col-67 {
   -webkit-box-flex: 0;
@@ -6420,7 +6452,7 @@ a.button {
 .platform-ios7.platform-cordova:not(.fullscreen) .tabs-top > .tabs, .platform-ios7.platform-cordova:not(.fullscreen) .tabs.tabs-top {
   top: 64px; }
 .platform-ios7.platform-cordova:not(.fullscreen) .has-header, .platform-ios7.platform-cordova:not(.fullscreen) .bar-subheader {
-  top: 64px; }
+  top: 121px; }
 .platform-ios7.platform-cordova:not(.fullscreen) .has-subheader {
   top: 108px; }
 .platform-ios7.platform-cordova:not(.fullscreen) .has-tabs-top {
